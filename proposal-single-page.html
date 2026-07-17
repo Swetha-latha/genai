@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aahar & Shakti - Single Page Proposal</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.3;
+            margin: 0;
+            padding: 15px;
+            font-size: 11px;
+            color: #333;
+        }
+        .container {
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 200px;
+            gap: 20px;
+            height: 100vh;
+        }
+        .content {
+            padding-right: 10px;
+        }
+        .image-space {
+            border: 2px dashed #ccc;
+            padding: 10px;
+            text-align: center;
+            color: #999;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .image-placeholder {
+            border: 1px solid #ddd;
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f9f9f9;
+            font-size: 10px;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .header h1 {
+            color: #e74c3c;
+            font-size: 1.8em;
+            margin: 0;
+            font-weight: bold;
+        }
+        .header p {
+            color: #666;
+            font-size: 1em;
+            margin: 3px 0 0 0;
+        }
+        .section {
+            margin-bottom: 12px;
+        }
+        .section h2 {
+            color: #2c3e50;
+            font-size: 1.1em;
+            border-left: 3px solid #3498db;
+            padding-left: 8px;
+            margin: 0 0 6px 0;
+        }
+        .section p, .section li {
+            font-size: 10px;
+            margin: 4px 0;
+        }
+        .highlight-box {
+            background: #ecf0f1;
+            padding: 8px;
+            border-radius: 4px;
+            border-left: 3px solid #27ae60;
+            margin: 6px 0;
+            font-size: 10px;
+        }
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 4px;
+            margin: 6px 0;
+        }
+        .tech-item {
+            background: #3498db;
+            color: white;
+            padding: 4px 6px;
+            border-radius: 3px;
+            text-align: center;
+            font-size: 9px;
+        }
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin: 8px 0;
+        }
+        .metric {
+            text-align: center;
+            background: #f39c12;
+            color: white;
+            padding: 8px;
+            border-radius: 4px;
+        }
+        .metric h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .metric p {
+            margin: 2px 0 0 0;
+            font-size: 8px;
+        }
+        .team-compact {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 6px;
+            margin: 8px 0;
+        }
+        .team-member {
+            background: #34495e;
+            color: white;
+            padding: 6px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .team-member h4 {
+            margin: 0 0 2px 0;
+            font-size: 10px;
+            color: #ecf0f1;
+        }
+        .team-member p {
+            margin: 0;
+            font-size: 8px;
+            color: #bdc3c7;
+        }
+        ul {
+            padding-left: 12px;
+            margin: 4px 0;
+        }
+        li {
+            margin-bottom: 2px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 10px;
+            padding-top: 8px;
+            border-top: 1px solid #ecf0f1;
+            color: #7f8c8d;
+            font-size: 9px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="header">
+                <h1>आहार & शक्ति (Aahar & Shakti)</h1>
+                <p>AI-Powered Personalized Diet & Fitness for Indians</p>
+            </div>
+
+            <div class="two-column">
+                <div>
+                    <div class="section">
+                        <h2>🎯 Problem Statement</h2>
+                        <p>India faces a nutrition crisis with 68% deaths from lifestyle diseases. Current solutions ignore:</p>
+                        <ul>
+                            <li><strong>Cultural barriers:</strong> Western diets vs Indian preferences</li>
+                            <li><strong>Economic constraints:</strong> 270M below poverty line</li>
+                            <li><strong>Local accessibility:</strong> Seasonal prices, regional availability</li>
+                            <li><strong>Equipment limitations:</strong> No gym access in rural areas</li>
+                        </ul>
+                        
+                        <div class="highlight-box">
+                            <strong>Gap:</strong> No solution combines personalized nutrition with local sourcing, cultural preferences, and budget optimization for Indians.
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>💡 Proposed Solution</h2>
+                        <p><strong>Aahar & Shakti</strong> delivers hyper-personalized nutrition and fitness through:</p>
+                        <ul>
+                            <li><strong>Smart Meal Planning:</strong> 500+ regional recipes with real-time price optimization</li>
+                            <li><strong>AI Food Scanner:</strong> Snap food platter → instant calories, nutrients, protein, carbs analysis + suggestions for balanced meal completion</li>
+                            <li><strong>Cultural Intelligence:</strong> Respects fasting, regional cuisines, religious restrictions</li>
+                            <li><strong>Equipment-Free Fitness:</strong> Yoga, bodyweight exercises, traditional activities</li>
+                            <li><strong>Vernacular Support:</strong> Voice guidance in 8 Indian languages</li>
+                            <li><strong>Local Integration:</strong> APMC price data, vendor partnerships</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="section">
+                        <h2>🛠️ Technology Stack</h2>
+                        <div class="tech-grid">
+                            <div class="tech-item">React Native</div>
+                            <div class="tech-item">Node.js</div>
+                            <div class="tech-item">MongoDB</div>
+                            <div class="tech-item">TensorFlow.js</div>
+                            <div class="tech-item">AWS S3</div>
+                            <div class="tech-item">Firebase</div>
+                            <div class="tech-item">Google Maps</div>
+                            <div class="tech-item">Razorpay</div>
+                        </div>
+                        <p><strong>AI Features:</strong> Recipe recommendations, price prediction, <strong>food platter analysis (calories, nutrients, balance suggestions)</strong>, vernacular voice processing.</p>
+                    </div>
+
+                    <div class="section">
+                        <h2>📈 Expected Impact</h2>
+                        <div class="metrics">
+                            <div class="metric">
+                                <h3>500K+</h3>
+                                <p>Users in 3 years</p>
+                            </div>
+                            <div class="metric">
+                                <h3>₹5Cr</h3>
+                                <p>Revenue potential</p>
+                            </div>
+                            <div class="metric">
+                                <h3>30%</h3>
+                                <p>Nutrition improvement</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-box">
+                            <strong>Social Impact:</strong> Support 10K+ vendors, create 500+ jobs, reduce food waste by 25%, improve rural nutrition access.
+                        </div>
+
+                        <p><strong>Scalability:</strong> Tamil Nadu (6M) → South India (12M) → Pan-India (18M)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>💼 Business Strategy & Budget</h2>
+                <div class="two-column" style="margin-bottom: 10px;">
+                    <div>
+                        <p><strong>Go-to-Market:</strong></p>
+                        <ul>
+                            <li>Phase 1: Chennai beta (1K users, 3 months)</li>
+                            <li>Phase 2: Tamil Nadu launch (50K users, 6 months)</li>
+                            <li>Phase 3: South India expansion (200K users, 12 months)</li>
+                        </ul>
+                        <p><strong>Revenue Streams:</strong></p>
+                        <ul>
+                            <li>Freemium: ₹99/month premium features</li>
+                            <li>Vendor commissions: 2-3% on orders</li>
+                            <li>Consultations: ₹300/session</li>
+                            <li>Sponsored content: ₹50K/month</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p><strong>Development Budget (12 months):</strong> Our lean development approach requires ₹35 lakhs total investment, including ₹20 lakhs for a 4-member core team, ₹8 lakhs for cloud infrastructure and APIs, ₹5 lakhs for initial marketing, and ₹2 lakhs for legal and operational setup.</p>
+                        
+                        <p><strong>Revenue Projection:</strong> We project ₹15 lakhs in Year 1 through 5K premium subscribers, scaling to ₹1.2 crores in Year 2 with 25K users and vendor partnerships, reaching ₹3.5 crores by Year 3 with 75K active users and expanded service offerings.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>👥 Hackathon Team</h2>
+                <p><strong>Core Team:</strong> Rajesh Kumar (Full-Stack Developer, IIT Madras), Priya Sharma (AI/ML Engineer, IISC Bangalore), Dr. Anita Reddy (Nutrition Consultant, AIIMS Delhi), Vikram Singh (Mobile Developer, NIT Trichy). <strong>Contact:</strong> team@aaharshakti.com | +91-9876543210</p>
+            </div>
+
+            <div class="footer">
+                <p><strong>Aahar & Shakti Pvt Ltd</strong> | Bangalore, Karnataka | www.aaharshakti.com | info@aaharshakti.com | +91-80-12345678</p>
+            </div>
+        </div>
+
+        <div class="image-space">
+            <h3 style="margin: 0; font-size: 12px; color: #333;">App Screenshots</h3>
+            
+            <div class="image-placeholder">
+                <span>Home Screen<br>Insert Image Here</span>
+            </div>
+            
+            <div class="image-placeholder">
+                <span>Meal Planning<br>Insert Image Here</span>
+            </div>
+            
+            <div class="image-placeholder">
+                <span>Fitness Tracker<br>Insert Image Here</span>
+            </div>
+            
+            <p style="font-size: 9px; margin: 5px 0;">Replace placeholders with actual app screenshots</p>
+        </div>
+    </div>
+</body>
+</html>
